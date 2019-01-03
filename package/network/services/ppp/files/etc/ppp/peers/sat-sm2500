@@ -1,0 +1,15 @@
+/dev/ttyACM0
+115200
+crtscts
+unit 1
+connect '/usr/sbin/chat -v -f /etc/ppp/sat-connect-chat'
+debug
+logfile /var/ppplog
+#noauth
+#noccp
+#lock
+nodetach
+ipcp-accept-local
+ipcp-accept-remote
+defaultroute
+usepeerdns

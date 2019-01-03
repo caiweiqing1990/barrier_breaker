@@ -1,0 +1,14 @@
+ABORT   BUSY
+ABORT   'NO CARRIER'
+ABORT   ERROR
+REPORT  CONNECT
+TIMEOUT 300
+""      "AT"
+OK      "AT+CRC=1"
+OK 	    "AT+CSNS=3"
+OK      'AT+CGDCONT=1,\"IP\",\"$USE_APN\"'
+SAY     "Calling UMTS/GPRS"
+OK 	    "AT+CGATT=1"
+OK 	    "AT+CGACT=1"
+OK      "ATD$DIALNUMBER"
+CONNECT ' '

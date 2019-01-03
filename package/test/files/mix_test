@@ -1,0 +1,9 @@
+#!/bin/sh /etc/rc.common
+START=50
+STOP=10
+start() {
+    /bin/mix_test &
+}
+stop() {
+    killall mix_test
+}

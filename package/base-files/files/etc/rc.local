@@ -1,0 +1,12 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+power_mode gprs on
+sleep 10
+
+power_mode sat_sm2500 on
+sleep 10
+
+satfi &
+
+exit 0

@@ -1,0 +1,7 @@
+#include "inma.h"
+
+int main()
+{
+    printf("hello,inma!");
+    return 0;
+}

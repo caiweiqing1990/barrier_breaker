@@ -1,0 +1,11 @@
+nocrtscts
+modem
+nodetach
+usepeerdns
+noipdefault
+defaultroute
+user smsong
+0.0.0.0:0.0.0.0
+ipcp-accept-local
+noccp
+

@@ -1,0 +1,13 @@
+OBJS += mix_test.o power_mode.o sp2349.o uart.o
+
+
+%.o: %.c %.h
+	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
+
+mix_test: $(OBJS)
+	$(CC) -o $@ $(OBJS) $(LDFLAGS)
+
+clean:
+	rm -f rbcfg *.o
+	
+all: mix_test
